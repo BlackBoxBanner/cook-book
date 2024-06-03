@@ -48,7 +48,7 @@ export default function RootLayout({
 			>
 				<header
 					className={cn(
-						"flex justify-between items-center sticky top-0 backdrop-blur px-8 py-4 z-10 shadow-md text-lg"
+						"flex justify-between items-center sticky top-0 backdrop-blur bg-background lg:bg-transparent px-8 py-4 z-10 shadow-md text-lg"
 					)}
 				>
 					<Link href="/">
