@@ -86,6 +86,7 @@ ol > li {
 	margin: 4px 0;
 	padding-left: 0px;
 	position: relative;
+	margin-bottom: 0.8rem;
 }
 
 /* Style for unordered list */
@@ -99,4 +100,5 @@ ul > li {
 	margin: 4px 0;
 	padding-left: 0px;
 	position: relative;
+	margin-bottom: 1rem;
 }

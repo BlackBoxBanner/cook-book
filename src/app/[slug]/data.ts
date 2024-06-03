@@ -17,12 +17,13 @@ export const cookbook: CookBook[] = [
 		description:
 			"เลมอนเคิร์ด เป็นซอสลักษณะคล้ายคัสตาร์ด มีรสชาติออกเปรี้ยวหวานมีกลิ่นหอมอ่อนๆของเลมอนเป็นหลัก นิยมนำไปใช้ทาขนมปัง, แครกเกอร์ หรือเอาไปเป็นส่วนประกอบของขนมอื่นๆ เช่น คุกกี้ พายหรือทาร์ต",
 		ingredients: [
-			{ ingredient: "เนย", quantity: "70", units: "g" },
+			{ ingredient: "เนยเค็ม", quantity: "70", units: "g" },
 			{ ingredient: "เกลือ", quantity: "0.125", units: "tsp" },
 			{ ingredient: "น้ำตาลทราย", quantity: "110", units: "g" },
 			{ ingredient: "น้ำเลม่อน", quantity: "100", units: "ml" },
 			{ ingredient: "ผิวเลม่อน", quantity: "2", units: "tbsp" },
-			{ ingredient: "ไข่", quantity: "3", units: "unit" },
+			{ ingredient: "ไข่แดง", quantity: "3", units: "unit" },
+			{ ingredient: "ไข่ขาว", quantity: "1", units: "unit" },
 		],
 		steps: [
 			"นำผิวเลมอนขูดมาคลุกกับน้ำตาลทรายในอ่างผสมให้เข้ากันดี",
@@ -34,6 +35,25 @@ export const cookbook: CookBook[] = [
 			"ใช้ตะกร้อคนส่วนผสมอย่างต่อเนื่อง เพื่อป้องกันการเกิดเป็นก้อน",
 			"คนจนส่วนผสมเริ่มข้นขึ้น (ใช้เวลาประมาณ 10-15 นาที)",
 			"ใส่เนยจืดหั่นเป็นชิ้นเล็กๆ ลงไปในส่วนผสม คนจนเนยละลายและเข้ากันดีกับส่วนผสม",
+		],
+	},
+	{
+		name: "ซอสมะพร้าว",
+		slug: "coconut-sauce",
+		date: new Date("2024-06-03").toDateString(),
+		description: "ลาวามะพร้าวอ่อน",
+		ingredients: [
+			{ ingredient: "น้ำมะพร้าว", quantity: "200", units: "g" },
+			{ ingredient: "กะทิ", quantity: "100", units: "g" },
+			{ ingredient: "น้ำตาล", quantity: "30", units: "g" },
+			{ ingredient: "แป้งกวนใส้", quantity: "10", units: "g" },
+			{ ingredient: "เนยเค็ม", quantity: "10", units: "g" },
+			{ ingredient: "เนื้อมะพร้าว", quantity: "300", units: "g" },
+		],
+		steps: [
+			"นำน้ำมะพร้าว กะทิ และน้ำตาลทราย ใส่ลงในหม้อ คนให้เข้ากัน (ขั้นตอนนี้ชิมรสได้ตามชอบ จะตัดรสด้วยเกลือนิดหน่อยก็ได้)",
+			"ใส่แป้งข้าวโพด คนให้แป้งละลาย นำขึ้นตั้งไฟปานกลางค่อนข้างอ่อน ระหว่างตั้งไฟให้คนตลอดค่ะ เดี๋ยวจะไหม้ก้นหม้อ คนจนซอสข้น หลังจากนั้นใส่เนื้อมะพร้าวอ่อน",
+			"คนให้เข้ากัน รอเดือดนิดหน่อยแล้วปิดไฟ พักให้เย็น",
 		],
 	},
 ];

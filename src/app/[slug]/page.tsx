@@ -26,7 +26,7 @@ const RecipePage = ({ params }: { params: { slug: string } }) => {
 				</div>
 				<RecipeTable ingredient={data.ingredients} />
 				<div className={cn(data.steps.length == 0 && "hidden")}>
-					<h3 className="font-semibold">Instructions</h3>
+					<h3 className="font-semibold mb-4">Instructions</h3>
 					<ol>
 						{data.steps.map((step, index) => {
 							return <li key={index}>{step}</li>;
