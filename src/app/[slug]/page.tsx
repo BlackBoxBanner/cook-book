@@ -29,7 +29,18 @@ const RecipePage = ({ params }: { params: { slug: string } }) => {
 					<h3 className="font-semibold mb-4">Instructions</h3>
 					<ol>
 						{data.steps.map((step, index) => {
-							return <li key={index}>{step}</li>;
+							return (
+								<>
+									<li key={index}>{step.content}</li>
+									{step.step && (
+										<ol>
+											{step.step.map((item, index) => {
+												return <li key={index}>{item}</li>;
+											})}
+										</ol>
+									)}
+								</>
+							);
 						})}
 					</ol>
 				</div>

@@ -34,7 +34,7 @@ const RecipeList = () => {
 					}}
 				/>
 			</div>
-			<div className="grid h-fit grid-cols-1 md:grid-cols-2 gap-4 my-4">
+			<div className="grid h-fit grid-cols-1 md:grid-cols-2 gap-4 my-4 mb-12">
 				{recipes.length === 0 && (
 					<>
 						<div className="text-center col-span-2 my-4">

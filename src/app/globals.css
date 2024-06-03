@@ -79,7 +79,7 @@
 ol {
 	list-style-type: decimal;
 	margin: 0;
-	padding: 0;
+	padding: 0 0 0 20px; /* Added padding for nested lists */
 }
 
 ol > li {
@@ -93,7 +93,7 @@ ol > li {
 ul {
 	list-style-type: disc;
 	margin: 0;
-	padding: 0;
+	padding: 0 0 0 20px; /* Added padding for nested lists */
 }
 
 ul > li {
@@ -101,4 +101,20 @@ ul > li {
 	padding-left: 0px;
 	position: relative;
 	margin-bottom: 1rem;
+}
+
+/* Additional styles for nested lists */
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+	margin: 4px 0;
+	padding-left: 20px; /* Indent nested lists */
+}
+
+ol ol > li,
+ol ul > li,
+ul ol > li,
+ul ul > li {
+	margin-bottom: 0.5rem; /* Slightly smaller margin for nested list items */
 }
