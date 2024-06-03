@@ -146,7 +146,7 @@ const RecipeTable = ({ ingredient }: { ingredient: Ingredient[] }) => {
 								<TableCell>{item.ingredient}</TableCell>
 								<TableCell>{`${toFraction(
 									parseFloat(item.quantity),
-									decimal
+									!decimal
 								)} ${item.units}`}</TableCell>
 							</TableRow>
 						);
