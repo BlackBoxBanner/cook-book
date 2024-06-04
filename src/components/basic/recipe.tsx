@@ -41,83 +41,6 @@ type IngredientList =
 	| ""
 	| ""
 	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
-	| ""
 	| "";
 
 export type Ingredient = {
@@ -242,14 +165,18 @@ const RecipeTable = ({ ingredient }: { ingredient: Ingredient[] }) => {
 			<Table>
 				<TableHeader>
 					<TableRow>
+						<TableHead className="w-[2rem]"></TableHead>
 						<TableHead>ingredient</TableHead>
-						<TableHead className="w-[10rem]">quantity</TableHead>
+						<TableHead className="w-[6rem] md:w-[10rem]">quantity</TableHead>
 					</TableRow>
 				</TableHeader>
 				<TableBody>
 					{list.map((item, index) => {
 						return (
 							<TableRow key={index}>
+								<TableCell className="flex justify-center items-center">
+									<Checkbox />
+								</TableCell>
 								<TableCell>{item.ingredient}</TableCell>
 								<TableCell>{`${toFraction(
 									parseFloat(item.quantity),

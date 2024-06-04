@@ -33,11 +33,11 @@ const RecipePage = ({ params }: { params: { slug: string } }) => {
 								<>
 									<li key={index}>{step.content}</li>
 									{step.step && (
-										<ol>
+										<ul>
 											{step.step.map((item, index) => {
 												return <li key={index}>{item}</li>;
 											})}
-										</ol>
+										</ul>
 									)}
 								</>
 							);
